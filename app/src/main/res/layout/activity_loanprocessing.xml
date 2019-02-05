@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normalbg"
+    tools:context=".loanprocessing">
+
+    <ImageView
+        android:id="@+id/icn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/jijengeappicon"/>
+
+
+    <ScrollView
+        android:id="@+id/loanreqdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/icn"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/next"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/seclist"
+                android:layout_centerHorizontal="false"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttons"
+                android:text="DECLINE" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/borrowerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/transparent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCard">
+
+                    <LinearLayout
+                        android:id="@+id/paystats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/memberpic"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/juserstock" />
+
+                        <TextView
+                            android:id="@+id/memname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="John Doe"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/loaninfos"
+                android:layout_below="@id/borrowerinfo"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:cardElevation="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCard">
+
+            <LinearLayout
+                android:id="@+id/amountreqdetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Loan Details"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/reqloan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView6"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/textView6"
+                        android:padding="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Amount Applied"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/reqloaninstall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView64"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/textView64"
+                        android:padding="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Monthly Installments"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/installmentnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView63"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/textView63"
+                        android:padding="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Number of Payments"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/installmentype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView63r"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/textView63r"
+                        android:padding="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView63r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Installment Type"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loanreason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView642"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/textView642"
+                        android:padding="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView642"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Purpose"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loanofficer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView6422"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/textView6422"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView6422"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Loan Officer"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/loanhistinfos"
+                android:layout_below="@id/loaninfos"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/transparent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCard">
+
+                    <LinearLayout
+                        android:id="@+id/histodetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Credit Details"
+                            android:textAllCaps="true"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/previuosloans"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView6d"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/textView6d"
+                                android:padding="5dp"
+                                android:textAlignment="viewEnd"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView6d"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Number of Loans Taken"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/creditscore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView64s"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/textView64s"
+                                android:padding="5dp"
+                                android:textAlignment="viewEnd"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView64s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Credit Score"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/guarantorinfo"
+                android:layout_below="@id/loanhistinfos"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/transparent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCard">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Guarantor info"
+                            android:textAllCaps="true"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/gname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView60"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/textView60"
+                                android:padding="5dp"
+                                android:textAlignment="viewEnd"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView60"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Guarantor Name"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/gid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView630"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/textView630"
+                                android:padding="5dp"
+                                android:textAlignment="viewEnd"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView630"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Identity Number"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/contact"
+                                android:layout_width="match_parent"
+                                android:autoLink="phone"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView640"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/textView640"
+                                android:padding="5dp"
+                                android:textAlignment="viewEnd"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView640"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Contact"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/residence"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView6400"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/textView6400"
+                                android:padding="5dp"
+                                android:textAlignment="viewEnd"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView6400"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Residence"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/occupation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView6410"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/textView6410"
+                                android:padding="5dp"
+                                android:textAlignment="viewEnd"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView6410"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Occupation"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/relationshipp"
+                                android:layout_width="match_parent"
+                                android:autoLink="phone"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView6420"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/textView6420"
+                                android:padding="5dp"
+                                android:textAlignment="viewEnd"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView6420"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Relationship"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guarantorinfo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Securities"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/seclist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView28"
+                android:layout_margin="5dp" />
+
+
+            <Button
+                android:id="@+id/next1"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/seclist"
+                android:layout_centerHorizontal="false"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttons"
+                android:text="ACCEPT" />
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

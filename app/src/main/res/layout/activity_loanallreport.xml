@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normalbg"
+    tools:context=".loanallreport">
+
+    <HorizontalScrollView
+        android:id="@+id/gridtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/tebo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:showDividers="middle">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Member Name" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Total Loan" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Installment" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Loan Duration" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Loan Balance" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Date Given" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Arreas" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Next Payment Date" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Loan Officer" />
+
+            </TableRow>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/loanslist"
+                android:layout_width="1450dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tebototals"
+                android:layout_below="@+id/tebo"
+                android:layout_marginRight="0dp" />
+
+            <TableRow
+                android:id="@+id/tebototals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark"
+                android:showDividers="middle"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="TOTAL" />
+
+                <TextView
+                    android:id="@+id/totloans"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Total repaid" />
+
+                <TextView
+                    android:id="@+id/totlsf"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="LSF paid" />
+
+                <TextView
+                    android:id="@+id/totlsfcf"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/totloaninst"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Loan Inst." />
+
+                <TextView
+                    android:id="@+id/totloangvn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Loan Given" />
+
+                <TextView
+                    android:id="@+id/totloancf"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/totadvinst"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Adv. Inst." />
+
+                <TextView
+                    android:id="@+id/totinterest"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="Interest" />
+
+                <TextView
+                    android:id="@+id/totadvgvn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/totadvcf"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/celloutline"
+                    android:padding="5dp"
+                    android:text="-" />
+
+            </TableRow>
+
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

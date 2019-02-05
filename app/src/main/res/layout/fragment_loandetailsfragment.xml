@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/normalbg"
+    android:layout_height="match_parent"
+    tools:context=".personaldetails">
+
+    <ImageView
+        android:id="@+id/icn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/jijengeappicon"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/icn"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/cardbg">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:clickable="false"
+                android:padding="2dp"
+                android:text="LOAN DETAILS"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/firstnamel"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/firstnamewr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/lamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Loan Amount"
+                        android:inputType="number"
+                        android:text="0"
+                        android:windowSoftInputMode="adjustPan" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/middlenamel"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstnamel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/middlenamewr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/lpurpose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Loan Purpose"
+                        android:inputType="text"
+                        android:windowSoftInputMode="adjustPan" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lastnamel"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/middlenamel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lastnamewr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/linstallments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Installments"
+                        android:inputType="number"
+                        android:windowSoftInputMode="adjustPan" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/installmentsperiods"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastnamel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/title12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start"
+                    android:text="Installment Type"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/instype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    tools:layout_editor_absoluteX="109dp"
+                    tools:layout_editor_absoluteY="261dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/idnumll"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/installmentsperiods"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net Loan"
+                    android:layout_weight="0"
+                    android:textSize="18sp"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/lnetamount"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:text="Kshs. 110000"
+                    android:padding="5dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dobl"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idnumll"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Installment"
+                    android:layout_weight="0"
+                    android:textSize="18sp"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/linstallment"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:text="Kshs. 5500"
+                    android:padding="5dp" />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/next1"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="179dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/dobl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttons"
+                android:text="SUBMIT" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

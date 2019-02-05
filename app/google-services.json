@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1070677954013",
+    "firebase_url": "https://jitihada-82a74.firebaseio.com",
+    "project_id": "jitihada-82a74",
+    "storage_bucket": "jitihada-82a74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070677954013:android:266283c73ddaefa6",
+        "android_client_info": {
+          "package_name": "com.example.london.financeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070677954013-ejervs981g43u4ptd9mj22mpf39pbobf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.london.financeapp",
+            "certificate_hash": "7666a05bc7c5ec50824dbd8039fdd2f0bca1dd3e"
+          }
+        },
+        {
+          "client_id": "1070677954013-4hu76mvgu80bbbr2hu69jv9i3eau1lf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTL5a8UV5MTBKyzxOvKbklG_H6z_FH1s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070677954013-4hu76mvgu80bbbr2hu69jv9i3eau1lf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/memberlistcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/colorCard">
+
+        <TextView
+            android:id="@+id/memname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/memberpic"
+            android:layout_toEndOf="@+id/memberpic"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:layout_marginStart="10dp"
+            android:padding="2dp"
+            android:text="Jane Doe"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/memstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/memberpic"
+            android:layout_alignStart="@+id/memname"
+            android:clickable="false"
+            android:padding="2dp"
+            android:text="Score"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/memberpic"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:padding="2dp"
+            android:text="Great"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/memberpic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/juserstock" />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

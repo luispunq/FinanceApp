@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".securities">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/securitydetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <ScrollView
+            android:id="@+id/loanappdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCard">
+
+            <TextView
+                android:id="@+id/secutitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="SECURITIES"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/sec1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secutitle"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item 1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+
+                    <EditText
+                        android:id="@+id/itemname1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Enter Item Name"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/itemmktval1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemname1"
+                        android:ems="10"
+                        android:hint="Enter Market Value"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/itemcmpval1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemmktval1"
+                        android:ems="10"
+                        android:hint="Enter Compressed Value"
+                        android:inputType="phone" />
+
+                    <EditText
+                        android:id="@+id/itemSNO1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemcmpval1"
+                        android:ems="10"
+                        android:hint="Enter Serial Number"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/save4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemSNO1"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/colorComplement"
+                        android:text="Save" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sec2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sec1"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item 2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+
+                    <EditText
+                        android:id="@+id/itemname2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Enter Item Name"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/itemmktval2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemname2"
+                        android:ems="10"
+                        android:hint="Enter Market Value"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/itemcmpval2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemmktval2"
+                        android:ems="10"
+                        android:hint="Enter Compressed Value"
+                        android:inputType="phone" />
+
+                    <EditText
+                        android:id="@+id/itemSNO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemcmpval2"
+                        android:ems="10"
+                        android:hint="Enter Serial Number"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/save5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemSNO2"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/colorComplement"
+                        android:text="Save" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sec3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sec2"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item 3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+
+                    <EditText
+                        android:id="@+id/itemname3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Enter Item Name"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/itemmktval3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemname3"
+                        android:ems="10"
+                        android:hint="Enter Market Value"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/itemcmpval3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemmktval3"
+                        android:ems="10"
+                        android:hint="Enter Compressed Value"
+                        android:inputType="phone" />
+
+                    <EditText
+                        android:id="@+id/itemSNO3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemcmpval3"
+                        android:ems="10"
+                        android:hint="Enter Serial Number"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/save6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itemSNO3"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/colorComplement"
+                        android:text="Save" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

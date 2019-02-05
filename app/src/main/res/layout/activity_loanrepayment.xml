@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loanpaymentbg"
+    tools:context=".loanrepayment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/memstat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="60dp"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/gstat"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:background="@color/colorCard"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/memname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:padding="2dp"
+                    android:text="John Doe"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/accnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/memname"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="false"
+                    android:padding="2dp"
+                    android:text="UBEB4823NS"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cordprofpic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/juserstock" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/memstat"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorCard">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/transparent">
+
+                    <TextView
+                        android:id="@+id/loanbalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/t1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:clickable="false"
+                        android:padding="2dp"
+                        android:text="Kshs. 54500"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:id="@+id/sep1"
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/loanbalance"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorGreen" />
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:clickable="false"
+                        android:padding="2dp"
+                        android:text="BALANCE"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/transparent">
+
+                    <TextView
+                        android:id="@+id/loaninstallment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/t2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:clickable="false"
+                        android:padding="2dp"
+                        android:text="Kshs. 5500"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:id="@+id/sep"
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/loaninstallment"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorRed" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:clickable="false"
+                        android:padding="2dp"
+                        android:text="INSTALLMENT"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/yearlbl"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/colorComplement"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2018"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/hl1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/yearlbl"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/monthb4lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:id="@+id/b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="December"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/monthnowlbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:id="@+id/b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="January"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/monthaflbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:id="@+id/b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="February"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/paymenthist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/hl1"
+                android:layout_marginTop="10dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addpayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:src="@drawable/ic_add_circle_black_24dp" />
+
+</RelativeLayout>

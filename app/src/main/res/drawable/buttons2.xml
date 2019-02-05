@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <padding android:bottom="5dp"/>
+            <padding android:top="5dp"/>
+            <padding android:left="5dp"/>
+            <padding android:right="5dp"/>
+            <corners android:radius="0dp" />
+            <gradient android:angle="135" android:startColor="@color/colorPrimary" android:endColor="@color/colorComplement"  />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle"  >
+            <padding android:bottom="5dp"/>
+            <padding android:top="5dp"/>
+            <padding android:left="5dp"/>
+            <padding android:right="5dp"/>
+            <corners android:radius="0dp" />
+            <solid android:color="@color/colorPrimaryLight"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle"  >
+            <padding android:bottom="5dp"/>
+            <padding android:top="5dp"/>
+            <padding android:left="5dp"/>
+            <padding android:right="5dp"/>
+            <corners android:radius="0dp" />
+            <gradient android:angle="135" android:startColor="@color/colorComplement" android:endColor="@color/colorPrimary" />
+        </shape>
+    </item>
+</selector>

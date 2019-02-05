@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transaccard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/gridmembername"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdtotalloan"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grddateissued"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdintrest"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdloancash"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdloanlocation"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdcontact"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdofficer"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdbalance"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdlink"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/linkColor"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+        </TableRow>
+    </LinearLayout>
+</RelativeLayout>

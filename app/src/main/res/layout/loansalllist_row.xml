@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reportlistcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/gridmembername"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdtotalrepaid"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdlsf"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdlsfcf"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdloaninst"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdloangivn"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdloancf"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdadvinst"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdadvanceint"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdadvancegiven"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdadvancecf"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/grdpaymode"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/celloutline"
+                android:padding="5dp" />
+
+        </TableRow>
+    </LinearLayout>
+
+</RelativeLayout>

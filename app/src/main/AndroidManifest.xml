@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.london.financeapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".FirebaseHandler"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            />
+        </activity>
+
+        <service
+            android:name=".SensorService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped" />
+
+        <activity android:name=".coordinator" />
+        <activity android:name=".loanrepayment" />
+        <activity android:name=".loanrepayment2" />
+        <activity android:name=".memberprofile" />
+        <activity android:name=".loandetails" />
+        <activity android:name=".allmyclients2" />
+        <activity android:name=".allmyclients3" />
+        <activity android:name=".userdayreport" />
+        <activity android:name=".adminreport" />
+        <activity
+            android:name=".adminhome"
+            android:label="@string/title_activity_adminhome"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".dateselector" />
+        <activity android:name=".dateselector2" />
+        <activity android:name=".dateselector3" />
+        <activity android:name=".dateselector4" />
+        <activity android:name=".dateselector4c" />
+        <activity android:name=".dateselector5" />
+        <activity android:name=".dateselector6" />
+        <activity android:name=".monthselector" />
+        <activity android:name=".monthselector2" />
+        <activity android:name=".monthselector4" />
+        <activity android:name=".monthselector4c" />
+        <activity android:name=".monthselector5" />
+        <activity android:name=".allarreas" />
+        <activity android:name=".loanprocessing" />
+        <activity android:name=".loanprocessingco" />
+        <activity android:name=".newmemberemail" />
+        <activity android:name=".addemployee" />
+        <activity android:name=".newemployeeemail" />
+        <activity android:name=".newloan" />
+        <activity android:name=".newloanrecurrentmember" />
+        <activity android:name=".loanallreport" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".loandetailspop"
+            android:label="@string/title_activity_loandetailspop"
+            android:theme="@style/CustomStyle" />
+        <activity android:name=".allmyclients" />
+        <activity
+            android:name=".creditofficerhome"
+            android:label="@string/title_activity_creditofficerhome"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".loananalysis"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".loananalysiswitharreas"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".loananalysiswitharreasall"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".loananalysisall"
+            android:screenOrientation="landscape" />
+        <activity android:name=".rangeselector" />
+        <activity android:name=".rangeselector4" />
+        <activity android:name=".rangeselector4c" />
+        <activity android:name=".rangeselector5" />
+        <activity
+            android:name=".defaultanalysis"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".defaultanalysisall"
+            android:screenOrientation="landscape" />
+        <activity android:name=".memberregistar" />
+        <activity android:name=".employeebasic" />
+        <activity android:name=".scripts" />
+        <activity android:name=".profitability"></activity>
+    </application>
+
+</manifest>

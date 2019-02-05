@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profitability">
+
+    <RelativeLayout
+        android:id="@+id/supportheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="JITIHADA CREDIT LIMITED"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViews"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:text="Profit Statement"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/transdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/supportheader">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/financesummaries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="2dp"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:id="@+id/finances"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorCard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/financestitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:fadingEdge="vertical"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:text="Summary"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/financedetail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="Total Income Earned"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalincome"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/financedetail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="Total Fees Income"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalfees"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/financedetail3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:text="Total Income"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalincomeearned"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:layout_below="@id/financesummaries"
+            android:fadingEdge="vertical"
+            android:focusable="true"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:text="Earning per Clients"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/gridtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tit1"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tebotop1"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:showDividers="middle">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/celloutline"
+                android:padding="2dp"
+                android:text="Name"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/celloutline"
+                android:padding="2dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Amount"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/celloutline"
+                android:padding="2dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Income"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/celloutline"
+                android:padding="2dp"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/memtransactionlist"
+                android:layout_width="900dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tebotop1" />
+        </RelativeLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:layout_below="@id/gridtitle"
+            android:fadingEdge="vertical"
+            android:focusable="true"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:text="Earning per Officer"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/gridtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tit2"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/top2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/tebotop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/celloutline"
+                        android:padding="2dp"
+                        android:text="Name"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/celloutline"
+                        android:padding="2dp"
+                        android:text="Date"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/celloutline"
+                        android:padding="2dp"
+                        android:text="Amount"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/celloutline"
+                        android:padding="2dp"
+                        android:text="Income"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/offtransactionlist"
+                    android:layout_width="900dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tebotop2" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

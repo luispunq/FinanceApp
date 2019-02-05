@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Jitihada</string>
+    <string name="loginbtext">LOGIN</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_adminhome">adminhome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="instype">
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="Years">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+    <string-array name="filters">
+        <item>Names</item>
+        <item>Loan</item>
+    </string-array>
+
+    <string-array name="filters2">
+        <item>Accepted</item>
+        <item>Declined</item>
+        <item>All</item>
+    </string-array>
+
+    <string-array name="coloanoptions">
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Range Selection</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="coloanoptionsc">
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Range Selection</item>
+    </string-array>
+
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_loandetailspop">loandetailspop</string>
+    <string name="title_activity_creditofficerhome">creditofficerhome</string>
+</resources>

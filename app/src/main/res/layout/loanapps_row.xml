@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transactioncard"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/card2bg">
+
+        <TextView
+            android:id="@+id/appmemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appmempic"
+            android:layout_toEndOf="@+id/appmempic"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:padding="2dp"
+            android:text="John Doe"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/appmempic"
+            android:layout_alignStart="@+id/appmemname"
+            android:clickable="false"
+            android:padding="2dp"
+            android:text="Thu, 18 Aug, ‘18"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/appamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appmempic"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:padding="2dp"
+            android:text="Kshs. 100000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/appmempic"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:padding="2dp"
+            android:text="Cleared"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/appmempic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/juserstock" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
